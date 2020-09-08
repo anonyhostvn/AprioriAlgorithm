@@ -34,7 +34,7 @@ class AprioriAlgo:
             print(self.list_recent_sup)
 
             for i in range(len(self.list_recent_sup)):
-                if self.list_recent_sup[i] / self.n >= self.minsup:
+                if float(self.list_recent_sup[i]) / self.n >= self.minsup:
                     list_recent_res_candidate.append(self.list_recent_candidate[i])
 
             if len(list_recent_res_candidate) > 0:
